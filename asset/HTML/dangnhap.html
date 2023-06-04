@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh long book - clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .search-bar .btn-search {
+            padding:13px;
+            margin:8px 0 0 0;
+        }
+        .content-register {
+            width:1170px;
+            margin: auto;
+            padding:300px 0;
+            min-height: 1000px;
+            background-color: rgba(17, 164, 217, 0.552);
+        }
+        .form-group {
+            width:50%;
+            margin:0 auto;
+            background-color: rgb(225, 144, 210);
+            padding: 50px;
+        }
+        .name-form {
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .form-control {
+            width:50%;
+            margin:10px auto;
+            display: block;
+            height: 40px;
+            padding: 0 20px;
+        }
+        .form-control:focus {
+            outline: none;
+        }
+        form > a {
+            text-decoration: none;
+            color:rgb(13, 16, 15);
+            margin: 10px 50px 30px;
+            border: 1px solid #000;
+        }
+        .form-subcontrol {
+            width:30%;
+            height: 20px;
+            padding: 0 10px;
+            float:left;
+            margin: 0 30px 0 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <!-- The Header Part -->
+            <div id="header" class="background-builtin ">
+                <div id="header-main">
+                    <div class="logo pull-left">
+                        <a href="asset/HTML/index.html"><img src="https://theme.hstatic.net/1000237375/1000756917/14/logo.png?v=1061" alt="Minh Long Book"></a>
+                    </div>
+                    <div class="search-bar pull-left">
+                        <div search-bar-shrink>
+                            <input type="text" class="form-control" name="search-text" placeholder="Tìm kiếm...">
+                            <input type="submit" class="btn-search" value="Tìm kiếm">
+                        </div>
+                    </div>
+                    <div id="nav-main" class="nav pull-left">
+                        <ul class="nav-child-above pull-left">
+                            <li><a href="https://minhlongbook.vn/pages/tra-cuu-don-hang" target="link">Tra cứu đơn hàng</a></li>
+                            <li><a href="https://minhlongbook.vn/cart">Giỏ hàng</a></li>
+                            <li>
+                                <a href="#">
+                                    Tài khoản
+                                </a>
+                                <ul class="nav-child-above sub-nav">
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li><a href="dangkytaikhoan.html">Đăng ký</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+                <div id="nav-sub" class="nav">
+                    <ul class="nav-child-below">
+                        <li class="book-catagory">
+                            <a href="#">Danh mục sách
+                            </a>
+                            <ul class="nav-child-below sub-nav">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="#">Sách mầm non</a></li>
+                                <li><a href="#">Sách thiều nhi</a></li>
+                                <li><a href="#">Sách kỹ năng</a></li>
+                                <li><a href="#">Sách kinh doanh</a></li>
+                                <li><a href="#">Sách mẹ và bé</a></li>
+                                <li><a href="#">Sách văn học</a></li>
+                                <li><a href="#">Sách tham khảo</a></li>
+                                <li><a href="#">Note book</a></li>
+                                <li><a href="#">Đồ chơi trẻ em - vpp</a></li>
+                                <li><a href="#">Top best seller</a></li>
+                                <li><a href="#">Tin tức/blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sản phẩm đã xem</a></li>
+                        <li><a href="#">Ship COD Trên Toàn Quốc</a></li>
+                        <li><a href="#">Free Ship Đơn Hàng Trên 300k</a></li>
+                        <li><a href="#">0966160925/ 0989 849 396</a></li>
+                    </ul>
+                </div>
+            </div>
+           <!-- End header parrt -->
+           
+           <!-- The content-register part -->
+           <div class="content-register">
+                <div class="form-group">
+                    <form>
+                        <div class="name-form">ĐĂNG NHẬP</div>
+                            <input class="form-control" id="" type="email"  placeholder="Email">
+                        </label> <br>
+                        <label for="">
+                            <input class="form-control" id="" type="password"  placeholder="Mật khẩu">
+                        </label> <br>
+                        <label for="">
+                            <input class="form-control" id="" type="button" value="Đăng nhập">
+                        </label>
+                        <label for="">
+                            <input class="form-subcontrol" id="" type="button" value="Quên mật khẩu">
+                        </label>
+                        <label for="">
+                            <input class="form-subcontrol" id="" type="button" value="Đăng ký">
+                        </label>
+                    </form>
+                </div>
+           </div>
+           <!-- End content-register part -->
+
+            <!-- The footer part -->
+            <div id="footer">
+                <div class="footer support">
+                    <ul class="footer-support">
+                        <li class="footer-support-child">Tin tức</li>
+                        <li class="footer-support-child">Hỗ trợ khách hàng</li>
+                        <li class="footer-support-child">Thông tin </li>
+                        <li class="footer-support-child">Kết nối</li>
+                        <li class="footer-support-child">Địa chỉ</li>
+                    </ul>
+                </div>
+                <div class="footer copyright">
+                    <div class="copyright-content"> Bản quyền thuộc về Công ty TNHH MTV TM và DV Văn Hoá Minh Long</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

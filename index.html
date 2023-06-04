@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh long book - clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="asset/CSS/style.css">
+    <style>
+        /* Phan chep file css trang chu */
+            .banner img{
+                                
+            }
+            .side-bar {
+                width:25%;
+                padding:0 15px;
+            }
+            .side-bar .item{
+                height:615px;
+                background-color: #fff;
+                background: url(../asset/images/ad.png) no-repeat;
+                background-size: contain;
+            }
+            .item + .item {
+                margin-top:30px;
+            }
+            #content-section {
+                width: 75%;
+                padding: 0 15px;
+            }
+            .content-row{
+                width: 100%;
+                height:276px;
+                background-color: #fff;
+            }
+            #content-section .row-1 {
+                margin-top: 25px;
+            }
+            #content-section .row-11 {
+                margin-bottom: 25px;
+            }
+            .content-row + .content-row {
+                margin-top: 20px;
+            }
+            .content-col{
+                width:33%;
+                height:100%;
+                float:left;
+                text-align: center;
+                background: url(https://theme.hstatic.net/1000237375/1000756917/14/banner_after_slide_1.png?v=1061) no-repeat;
+                background-size: contain;
+            }
+            .content-col.sanpham1, .content-col.sanpham2{
+                width:33%;
+                height:100%;
+                float:left;
+                text-align: center;
+            }
+            .content-col.sanpham1 {
+                background: url(https://product.hstatic.net/1000237375/product/bia_truoc_f3dab02fedc74168a80fa4de0cdbdfcc_large.jpg) no-repeat;
+                background-size: contain;
+            }
+            .content-col.sanpham2 {
+                background: url(https://product.hstatic.net/1000237375/product/bia_truoc_acdbc2e4f50749ceb47c5bf7f80a91e3_master.jpg) no-repeat;
+                background-size: contain;
+
+            }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <!-- The Header Part -->
+            <div id="header" class="background-builtin ">
+                <div id="header-main">
+                    <div class="logo pull-left">
+                        <a href="#"><img src="https://theme.hstatic.net/1000237375/1000756917/14/logo.png?v=1061" alt="Minh Long Book"></a>
+                    </div>
+                    <div class="search-bar pull-left">
+                        <div search-bar-shrink>
+                            <input type="text" class="form-control" name="search-text" placeholder="Tìm kiếm...">
+                            <input type="submit" class="btn-search" value="Tìm kiếm">
+                        </div>
+                    </div>
+                    <div id="nav-main" class="nav pull-left">
+                        <ul class="nav-child-above pull-left">
+                            <li><a href="https://minhlongbook.vn/pages/tra-cuu-don-hang" target="link">Tra cứu đơn hàng</a></li>
+                            <li><a href="https://minhlongbook.vn/cart">Giỏ hàng</a></li>
+                            <li>
+                                <a href="#">
+                                    Tài khoản
+                                </a>
+                                <ul class="nav-child-above sub-nav">
+                                    <li><a href="asset/HTML/dangnhap.html" target="link">Đăng nhập</a></li>
+                                    <li><a href="asset/HTML/dangkytaikhoan.html" target="link">Đăng ký</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+                <div id="nav-sub" class="nav">
+                    <ul class="nav-child-below">
+                        <li class="book-catagory">
+                            <a href="#">Danh mục sách
+                            </a>
+                            <ul class="nav-child-below sub-nav">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="#">Sách mầm non</a></li>
+                                <li><a href="#">Sách thiều nhi</a></li>
+                                <li><a href="#">Sách kỹ năng</a></li>
+                                <li><a href="#">Sách kinh doanh</a></li>
+                                <li><a href="#">Sách mẹ và bé</a></li>
+                                <li><a href="#">Sách văn học</a></li>
+                                <li><a href="#">Sách tham khảo</a></li>
+                                <li><a href="#">Note book</a></li>
+                                <li><a href="#">Đồ chơi trẻ em - vpp</a></li>
+                                <li><a href="#">Top best seller</a></li>
+                                <li><a href="#">Tin tức/blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sản phẩm đã xem</a></li>
+                        <li><a href="#">Ship COD Trên Toàn Quốc</a></li>
+                        <li><a href="#">Free Ship Đơn Hàng Trên 300k</a></li>
+                        <li><a href="#">0966160925/ 0989 849 396</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- The content part -->
+            <!-- <iframe src="asset/HTML/home.html" frameborder="0" name="link" scrolling="no"></iframe> -->
+            <div class="banner">
+                <img src="https://theme.hstatic.net/1000237375/1000756917/14/slider_item_1_image.jpg?v=1061" width="100%" height="504px">
+            </div>
+            <!-- The aside part -->
+            <div id="part-aside-content" class="background-builtin">
+                <aside class="side-bar pull-left">
+                    <div class="item item-1"></div>
+                    <div class="item item-2"></div>
+                </aside>             
+                <!-- The content part -->
+                <div id="content-section" class="pull-left">
+                    <div class="content-row row-1">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-2">
+                            <a href="asset/HTML/sanpham1.html" target="_blank"><div class="content-col sanpham1"></div></a>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-3">
+                        <a href="asset/HTML/sanpham2.html"><div class="content-col sanpham2"></div></a>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-4">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-5">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-6">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-7">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-8">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-9">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-10">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    <div class="content-row row-11">
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                        <div class="content-col"></div>
+                    </div>
+                    
+                </div>
+                <div class="clear-float"></div>
+                <!-- The contact part -->
+                
+            </div>
+            <div id="contact">
+                <div class="contact-box pull-left"><span>MIỄN PHÍ VẬN CHUYỂN<br>cho đơn hàng trên 300,000 VNĐ</span></div>
+                <div class="contact-box pull-left"><span>SHIP COD TOÀN QUỐC<br>Thanh toán khi nhận sách</span></div>
+                <div class="contact-box pull-left"><span>MIỄN PHÍ ĐỔI TRẢ HÀNG<br>trong vòng 10 ngày</span></div>
+                <div class="contact-box pull-left"><span>HOTLINE:<br>0966160925 - 02473008377 - 0989849396</span></div>
+            </div>
+            <!-- The footer part -->
+            <div id="footer">
+                <div class="footer support">
+                    <ul class="footer-support">
+                        <li class="footer-support-child">Tin tức</li>
+                        <li class="footer-support-child">Hỗ trợ khách hàng</li>
+                        <li class="footer-support-child">Thông tin </li>
+                        <li class="footer-support-child">Kết nối</li>
+                        <li class="footer-support-child">Địa chỉ</li>
+                    </ul>
+                </div>
+                <div class="footer copyright">
+                    <div class="copyright-content"> Bản quyền thuộc về Công ty TNHH MTV TM và DV Văn Hoá Minh Long</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
