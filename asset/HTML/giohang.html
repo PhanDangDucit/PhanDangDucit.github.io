@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+
+        }
+
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:14px;
+        }
+
+        .banner {
+            width:100%;
+        }
+        .side-bar {
+            width:25%;
+            background-color: #ccc;
+        }
+        table, tbody, thead {
+            display:block;
+            background-color: #fff;
+        }
+        th {
+            height: 50px;
+        }
+        table {
+            margin: 20px 0;
+        }
+        table, td, th {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        img, p {
+            width: 240px;
+        }
+        p {
+            padding: 100px 0;
+        }
+        th.sanpham-head{
+            width:500px;
+        }
+        .sanpham-box{
+            width: 500px;
+            height: 400px;
+        }
+        .w-together{
+            width: 167px;
+        }
+        .content-final {
+            height:100px;
+
+        }
+        .total {
+            float:right;
+            margin: 20px;
+        }
+        .payment {
+            float: right;
+        }
+        .payment > button {
+            background-color: bisque;
+            display:block;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <!-- The Header Part -->
+            <div id="header" class="background-builtin ">
+                <div id="header-main">
+                    <div class="logo pull-left">
+                        <a href="../../index.html"><img src="https://theme.hstatic.net/1000237375/1000756917/14/logo.png?v=1061" alt="Minh Long Book"></a>
+                    </div>
+                    <div class="search-bar pull-left">
+                        <div search-bar-shrink>
+                            <input type="text" class="form-control" name="search-text" placeholder="Tìm kiếm...">
+                            <input type="submit" class="btn-search" value="Tìm kiếm">
+                        </div>
+                    </div>
+                    <div id="nav-main" class="nav pull-left">
+                        <ul class="nav-child-above pull-left">
+                            <li><a href="https://minhlongbook.vn/pages/tra-cuu-don-hang" target="link">Tra cứu đơn hàng</a></li>
+                            <li><a href="https://minhlongbook.vn/cart">Giỏ hàng</a></li>
+                            <li>
+                                <a href="#">
+                                    Tài khoản
+                                </a>
+                                <ul class="nav-child-above sub-nav">
+                                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                                    <li><a href="dangkytaikhoan.html">Đăng ký</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+                <div id="nav-sub" class="nav">
+                    <ul class="nav-child-below">
+                        <li class="book-catagory">
+                            <a href="#">Danh mục sách
+                            </a>
+                            <ul class="nav-child-below sub-nav">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="#">Sách mầm non</a></li>
+                                <li><a href="#">Sách thiều nhi</a></li>
+                                <li><a href="#">Sách kỹ năng</a></li>
+                                <li><a href="#">Sách kinh doanh</a></li>
+                                <li><a href="#">Sách mẹ và bé</a></li>
+                                <li><a href="#">Sách văn học</a></li>
+                                <li><a href="#">Sách tham khảo</a></li>
+                                <li><a href="#">Note book</a></li>
+                                <li><a href="#">Đồ chơi trẻ em - vpp</a></li>
+                                <li><a href="#">Top best seller</a></li>
+                                <li><a href="#">Tin tức/blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sản phẩm đã xem</a></li>
+                        <li><a href="#">Ship COD Trên Toàn Quốc</a></li>
+                        <li><a href="#">Free Ship Đơn Hàng Trên 300k</a></li>
+                        <li><a href="#">0966160925/ 0989 849 396</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="group background-builtin">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="sanpham-head">Sản Phẩm</th>
+                            <th class="w-together">Giá</th>
+                            <th class="w-together">Số lượng</th>
+                            <th class="w-together">Tổng</th>
+                            <th class="w-together">Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr class="sanpham">
+                            <td colspan="2" class="sanpham-box">
+                                <img class="pull-left" src="https://product.hstatic.net/1000237375/product/bia_truoc_f3dab02fedc74168a80fa4de0cdbdfcc_large.jpg" alt="">
+                                <p class="pull-left">Cuốn sách Chào Hàng Chuyên Nghiệp Để Bán Hàng Thành Công chính là cuốn sách bạn đang cần!</p>
+                            </td>
+                            <div class="clear-float"></div>
+                            <td class="w-together">94.000đ</td>
+                            <td class="w-together">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                </select>
+                            </td>
+                            <td class="w-together">94.000đ</td>
+                            <td class="w-together">Xóa</td>
+                        </tr>
+                        <tr class="sanpham">
+                            <td colspan="2" class="sanpham-box">
+                                <img class="pull-left" src="https://product.hstatic.net/1000237375/product/bia_truoc_acdbc2e4f50749ceb47c5bf7f80a91e3_master.jpg" alt="">
+                                <p class="pull-left">Cuốn sách Chào Hàng Chuyên Nghiệp Để Bán Hàng Thành Công chính là cuốn sách bạn đang cần!</p>
+                            </td>
+                            <div class="clear-float"></div>
+                            <td class="w-together">48.000đ</td>
+                            <td class="w-together">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                </select>
+                            </td>
+                            <td class="w-together">48.000đ</td>
+                            <td class="w-together">Xóa</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="content-final">
+                    <div class="total">
+                        <h3>Tổng tiền: <span>142.000đ</span></h3>
+                    </div>
+                    <div class="payment">
+                        <button>Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="footer">
+                <div class="footer support">
+                    <ul class="footer-support">
+                        <li class="footer-support-child">Tin tức</li>
+                        <li class="footer-support-child">Hỗ trợ khách hàng</li>
+                        <li class="footer-support-child">Thông tin </li>
+                        <li class="footer-support-child">Kết nối</li>
+                        <li class="footer-support-child">Địa chỉ</li>
+                    </ul>
+                </div>
+                <div class="footer copyright">
+                    <div class="copyright-content"> Bản quyền thuộc về Công ty TNHH MTV TM và DV Văn Hoá Minh Long</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://uhchat.net/code.php?f=adad96"></script>
+</body>
+</html>
